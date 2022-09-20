@@ -4,8 +4,11 @@ window.addEventListener('scroll', () => {
 })
 
 let li_t = document.querySelector(".li-t");
-let ar = document.querySelector(".uil");
+let ar = document.querySelector(".treat");
+let dr = document.querySelector(".drop");
 li_t.addEventListener("click",()=>{
+    dr.classList.toggle("show-drop");
+
     if(ar.classList.contains('uil-angle-down')){
         ar.classList.remove("uil-angle-down");
         ar.classList.add("uil-angle-up")
@@ -17,7 +20,7 @@ li_t.addEventListener("click",()=>{
 })
 
 
-let li_tt = document.querySelector(".li-t");
+let li_tt = document.querySelector(".li-tt");
 let ara = document.querySelector(".more");
 li_tt.addEventListener("click",()=>{
     if(ara.classList.contains('uil-angle-down')){
@@ -47,3 +50,23 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+//   show hide faqs 
+
+  let faqs = document.querySelectorAll("section.faqs .faqs");
+
+  faqs.forEach(i =>{
+    i.querySelector(".faqs-head").addEventListener("click",()=>{
+        i.querySelector(".faqs-p").classList.toggle("show-faq");
+        const icn = i.querySelector(".sh");
+        if(icn.classList.contains("uil-plus")){
+            icn.classList.remove("uil-plus");
+            icn.classList.add("uil-minus");
+        }
+        else{
+            icn.classList.remove("uil-minus");
+            icn.classList.add("uil-plus");
+        }
+
+    })
+  })

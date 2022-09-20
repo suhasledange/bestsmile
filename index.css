@@ -27,7 +27,7 @@ nav{
     position: fixed;
     top: 0;
     height: 5rem;
-    width: 100vw;
+    width: 100%;
     background: var(--color-bg);
     display: flex;
     align-items: center;
@@ -78,12 +78,16 @@ section{
 }
 .container .nav-mid ul li{
     font-size: 1.1rem;
+    position: relative;
 }
 .container .nav-mid ul li:hover{
     cursor: pointer;
     color: var(--color-hover);
 
 }
+
+
+
 .container .nav-mid ul{
     display: flex;
     gap: 2rem;
@@ -104,6 +108,63 @@ section{
     font-size: 1.4rem;
     margin-left: 0.1rem;
 }
+.li-tt{
+    display: flex;
+}
+.li-tt i{
+    font-size: 1.4rem;
+    margin-left: 0.1rem;
+}
+
+/* // nav drop down  */
+.drop{
+  
+    display: none;
+}
+.show-drop{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vw;
+    backdrop-filter: brightness(50%);
+}
+.container-drop{
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    border-radius: 1rem;
+}
+.drops{
+    display: flex;
+    gap: 1rem;
+}
+.dr-txt h1{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+.dr-txt p{
+    font-size: 0.9rem;
+    color: var(--color-text-p);
+}
+.drops img{
+    width: 7rem;
+    height: 5rem;   
+}
+.dr-1{
+    background: var(--color);
+}
+
 .lan-btn{
     display: flex;
     align-items: center;
@@ -130,6 +191,12 @@ section{
     font-size: 0.8rem;
     color: var(--color-white);
     font-weight: 600;
+    border: 1px solid var(--color-text-p);
+    transition: ease .5s;
+}
+.nav-btn:hover{
+    background: var(--color-white);
+    color: var(--color-text);
 }
 /* //section head  */
 
@@ -138,7 +205,7 @@ section.head{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50rem;
     background: linear-gradient(to top,rgb(255, 241, 244),var(--color-bg));
     overflow: hidden;
     position: relative;
@@ -162,7 +229,7 @@ section.head{
 }
 .txt-swis{
     position: absolute;
-    bottom: 3%;
+    bottom: 5%;
     right: 3%;
     color: var(--color-dark);
     font-size: 1.6rem;
@@ -516,6 +583,76 @@ section.gaurantee{
     background: var(--color-btn);
     color: var(--color-white);
 
+}
+
+/* apponint */
+
+    section.appoint{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-appoint{
+        width: 35%;
+        text-align: center;
+    }
+    .container-appoint h1{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        line-height: 1.4;
+        font-weight: 500;
+        color: var(--color-text);
+    }
+    .container-appoint p{
+        font-size: 1.1rem;
+        color: var(--color-text-p);
+        margin-bottom: 4rem;
+    }
+    .app-btn{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+/* // faqs  */
+
+section.faqs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-faqs{
+    width: 85%;
+}
+.faqs{
+    margin-bottom: 1rem;
+}
+.faqs-head{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 50%;
+}
+.faqs-head i{
+    margin-right: 0.5rem;
+    /* cursor: pointer; */
+}
+.faqs-head h1{
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+.faqs-p{
+    height: 0rem;
+    overflow: hidden;
+    transition: ease .6s;
+}
+.show-faq{
+    height: 10rem;
+}
+.faqs-p p{
+    line-height: 1.5;
+    color: var(--color-text-p);
 }
 
 /* footer */
