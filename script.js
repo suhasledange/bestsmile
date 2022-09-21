@@ -8,7 +8,9 @@ let ar = document.querySelector(".treat");
 let dr = document.querySelector(".drop");
 li_t.addEventListener("click",()=>{
     dr.classList.toggle("show-drop");
-
+    dr.addEventListener("click",()=>{
+        dr.classList.remove("show-drop");
+    })
     if(ar.classList.contains('uil-angle-down')){
         ar.classList.remove("uil-angle-down");
         ar.classList.add("uil-angle-up")
@@ -25,6 +27,9 @@ let ara = document.querySelector(".more");
 let drm = document.querySelector(".drop-more");
 li_tt.addEventListener("click",()=>{
     drm.classList.toggle("drop-more-show");
+    drm.addEventListener("click",()=>{
+        drm.classList.remove("drop-more-show");
+    })
     if(ara.classList.contains('uil-angle-down')){
         ara.classList.remove("uil-angle-down");
         ara.classList.add("uil-angle-up")

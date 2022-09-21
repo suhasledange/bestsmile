@@ -7,6 +7,7 @@
     list-style: none;
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -35,6 +36,7 @@ nav{
     z-index: 11;
     
 }
+
 
 /* // supoort  */
 .support-btn{
@@ -250,6 +252,7 @@ section{
     padding: 0.6rem 0.8rem;
     border-radius: 3rem;
     gap: 0.3rem;
+    cursor: pointer;
 }
 .lan-btn i{
     font-size: 1rem;
