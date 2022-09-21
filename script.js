@@ -22,7 +22,9 @@ li_t.addEventListener("click",()=>{
 
 let li_tt = document.querySelector(".li-tt");
 let ara = document.querySelector(".more");
+let drm = document.querySelector(".drop-more");
 li_tt.addEventListener("click",()=>{
+    drm.classList.toggle("drop-more-show");
     if(ara.classList.contains('uil-angle-down')){
         ara.classList.remove("uil-angle-down");
         ara.classList.add("uil-angle-up")

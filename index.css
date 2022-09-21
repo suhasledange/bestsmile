@@ -33,6 +33,7 @@ nav{
     align-items: center;
     justify-content: center;
     z-index: 11;
+    
 }
 
 /* // supoort  */
@@ -85,9 +86,6 @@ section{
     color: var(--color-hover);
 
 }
-
-
-
 .container .nav-mid ul{
     display: flex;
     gap: 2rem;
@@ -99,7 +97,6 @@ section{
 }
 .container .nav-right ul li:hover{
     cursor: pointer;
-
 }
 .li-t{
     display: flex;
@@ -115,38 +112,67 @@ section{
     font-size: 1.4rem;
     margin-left: 0.1rem;
 }
-
 /* // nav drop down  */
 .drop{
   
     display: none;
+    /* display: block; */
+}
+.show-drop::before{
+    content: '';
+    width: 100rem;
+    height: 100rem;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    backdrop-filter: brightness(50%);
+    margin-top: -0.9rem;
 }
 .show-drop{
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
-    margin-top: 5rem;
+    left: -50%;
+    margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vw;
-    backdrop-filter: brightness(50%);
+    width: 24rem;
+    height: 25rem;
 }
 .container-drop{
-    margin-top: 1rem;
-    background: var(--color-white);
-    padding: 1rem;
     position: absolute;
     top: 0;
-    left: 25%;
+    left: 0%;
+    width: 100%;
+    background: var(--color-white);
     border-radius: 1rem;
 }
 .drops{
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
+    padding:1rem;
 }
+.drops:hover{
+    background: rgb(243, 247, 255);
+    border-radius: 1rem;
+}
+.img-box{
+    padding: 1rem 0rem;
+}
+
+.dro:nth-child(1) .img-box{
+    background: rgb(248, 229, 246);
+}
+.dro:nth-child(2) .img-box{
+    background: rgb(12, 17, 110);
+}
+.dro:nth-child(3) .img-box{
+    background: rgb(207, 218, 237);
+}
+
+
 .dr-txt h1{
     font-size: 1.1rem;
     font-weight: 500;
@@ -163,6 +189,57 @@ section{
 }
 .dr-1{
     background: var(--color);
+}
+.more-d{
+    position: relative;
+}
+ /*  more drop */
+
+.drop-more{
+    display: none;  
+}
+.more-container{
+    background: var(--color-white);
+    width: 10rem;
+}
+ .drop-more-show::before{
+    content: '';
+    width: 200rem;
+    height: 100rem;
+    position: absolute;
+    top: 0;
+    left: -100rem;
+    backdrop-filter: brightness(50%);
+    margin-top: -1.8rem;
+    z-index: -1;
+} 
+.drop-more-show{
+    display: block;
+    position: absolute;
+    top: 0;
+    margin-top: 5rem;
+}   
+.drop-ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.drop-ul li{
+    background: var(--color-white);
+    margin: -1rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.drop-ul li a{
+    color: var(--color-text);
+}
+.drop-ul li:hover{
+    background: rgb(243, 247, 255);
+}
+.drop-ul li:hover a{
+    color: var(--color-text-p);
 }
 
 .lan-btn{
@@ -205,7 +282,6 @@ section.head{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
     background: linear-gradient(to top,rgb(255, 241, 244),var(--color-bg));
     overflow: hidden;
     position: relative;
@@ -226,6 +302,7 @@ section.head{
     width: 9rem;
     height: 9rem;
     font-weight: 500;
+    z-index: 1;
 }
 .txt-swis{
     position: absolute;
@@ -625,7 +702,7 @@ section.faqs{
     width: 85%;
 }
 .faqs{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .faqs-head{
     display: flex;
@@ -636,19 +713,18 @@ section.faqs{
 }
 .faqs-head i{
     margin-right: 0.5rem;
-    /* cursor: pointer; */
 }
 .faqs-head h1{
     font-size: 1.2rem;
     color: var(--color-text);
 }
 .faqs-p{
-    height: 0rem;
+    display: none;
     overflow: hidden;
     transition: ease .6s;
 }
 .show-faq{
-    height: 10rem;
+    display: block;
 }
 .faqs-p p{
     line-height: 1.5;
