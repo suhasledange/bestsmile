@@ -43,19 +43,18 @@ li_tt.addEventListener("click",()=>{
 
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    //when windows width is >= 600px
+    breakpoints:{
+        600:{
+            slidesPerView:2
+        }
+    }
   });
 
 //   show hide faqs 
@@ -75,5 +74,23 @@ var swiper = new Swiper(".mySwiper", {
             icn.classList.add("uil-plus");
         }
 
+    })
+  })
+
+
+  let ham_btn = document.querySelector(".hamburger");
+  let nav_c = document.querySelector(".nav-mid");
+  let mob_lan=document.querySelector(".mob-lann");
+  let ham1 = document.querySelector(".hamburger .ham");
+
+  let ha1 = document.querySelector
+
+  ham_btn.addEventListener("click",()=>{
+    nav_c.classList.toggle("nav-mid-show");
+    mob_lan.classList.toggle("mob-lann-hide");
+    ham_btn.forEach(i =>{
+    
+        const ham_tog = i.querySelector(".ham")
+        ham_tog.classList.toggle("ham-open");
     })
   })
