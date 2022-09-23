@@ -293,7 +293,7 @@ section{
 /* //section head  */
 
 section.head{
-    margin-top:6rem;
+    margin-top:5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,7 +564,7 @@ section.gaurantee{
     gap: 3rem;
 }
 .gaur img{
-    width: 50rem;
+    width: 100%;
 }
 .gaur{
     position: relative;
