@@ -22,9 +22,9 @@ li_t.addEventListener("click",()=>{
 })
 
 
-let li_tt = document.querySelector(".li-tt");
+let li_tt = document.querySelector(".li-more");
 let ara = document.querySelector(".more");
-let drm = document.querySelector(".drop-more");
+let drm = document.querySelector(".drop-more1");
 li_tt.addEventListener("click",()=>{
     drm.classList.toggle("drop-more-show");
     drm.addEventListener("click",()=>{
