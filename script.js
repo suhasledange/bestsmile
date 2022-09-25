@@ -89,4 +89,46 @@ var swiper = new Swiper(".mySwiper", {
     mob_lan.classList.toggle("mob-lann-hide");
     ham_btn.classList.toggle("ham");
 
-  })
+  });
+
+
+let animl = document.querySelectorAll('.animl');
+let animu = document.querySelectorAll('.animu');
+let animr = document.querySelectorAll('.animr');
+window.addEventListener('scroll',checkSect);
+checkSect();
+
+function checkSect(){
+    const trigger =  window.innerHeight / 5 * 4;
+
+    animl.forEach((ele) =>{
+        const eleTop = ele.getBoundingClientRect().top;
+        if(eleTop < trigger){
+            ele.classList.add("anim-show");
+
+        }
+        else{
+            ele.classList.remove('anim-show');
+        }
+    })
+    animu.forEach((ele) =>{
+        const eleTop = ele.getBoundingClientRect().top;
+        if(eleTop < trigger){
+            ele.classList.add("anim-show1");
+            
+        }
+        else{
+            ele.classList.remove('anim-show1');
+        }
+    })
+    animr.forEach((ele) =>{
+        const eleTop = ele.getBoundingClientRect().top;
+        if(eleTop < trigger){
+            ele.classList.add("anim-show2");
+            
+        }
+        else{
+            ele.classList.remove('anim-show2');
+        }
+    })
+}

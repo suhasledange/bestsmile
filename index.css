@@ -320,6 +320,7 @@ section.head{
     height: 9rem;
     font-weight: 500;
     z-index: 1;
+    transform: translateX(-200%);
 }
 .txt-swis{
     position: absolute;
@@ -339,6 +340,18 @@ section.head .container-head{
     align-items: center;
     justify-content: space-between;
 }
+
+.animu{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: 1s;
+}
+.anim-show1{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+
 .left-head{
     margin: 0 auto;
     margin-top: -5rem;
@@ -475,6 +488,15 @@ section.benefit{
     grid-template-columns: repeat(4,1fr);
     margin-top: 3rem;
 }
+.animl{
+    opacity: 0;
+    transform: translateX(-150%);
+    transition: 1.5s ease;
+}
+.animl.anim-show{
+    opacity: 1;
+    transform: translateX(0%);
+}
 .reason{
     width: 70%;
 }
@@ -515,6 +537,15 @@ section.works .work-img{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1.5rem;
+}
+.animr{
+    opacity: 0;
+    transform: translateX(200%);
+    transition: 1s ease;
+}
+.anim-show2{
+    opacity: 1;
+    transform: translateX(0%);
 }
 .work img{
     width: 100%;
@@ -945,17 +976,15 @@ footer{
         margin-top: 0.2rem;
         display: flex;
         align-items: center;
-        /* justify-content: center; */
-        width:5%;
+        width:8%;
         cursor: pointer;
-        height: 100%;
+        height: 50%;
     }
     .hamburger span{
         background: var(--color-text);
         position: absolute;
         width: 1.8rem;
         height: 0.2rem;
-        /* margin-bottom: 0.2rem; */
         transition: .5s;
     }
     .hamburger span:nth-child(1){
@@ -970,7 +999,6 @@ footer{
         width: 1.8rem;
         transform: translateY(0.6rem);
     }
-
 
     .hamburger.ham span:nth-child(2){
         transform: translateX(-2rem);
