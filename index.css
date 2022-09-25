@@ -772,7 +772,7 @@ section.mySwiper h1 span{
     width: 3rem;
     height: 3rem;
     position: absolute;
-    left: 46.5%;
+    left: 46%;
     top: -1.5rem;
     transform: rotate(45deg);
 }
@@ -1188,6 +1188,9 @@ footer{
     }
     section.mySwiper h1{
         font-size: 1.8rem;
+    }
+    .testimonial__body::before{
+        left: 44%;
     }
 
 
