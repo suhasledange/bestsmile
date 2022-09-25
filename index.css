@@ -344,7 +344,7 @@ section.head .container-head{
 .animu{
     opacity: 0;
     transform: translateY(-100%);
-    transition: 1s;
+    transition: .5s;
 }
 .anim-show1{
     opacity: 1;
@@ -491,7 +491,7 @@ section.benefit{
 .animl{
     opacity: 0;
     transform: translateX(-150%);
-    transition: 1.5s ease;
+    transition: .5s ease;
 }
 .animl.anim-show{
     opacity: 1;
@@ -541,7 +541,7 @@ section.works .work-img{
 .animr{
     opacity: 0;
     transform: translateX(200%);
-    transition: 1s ease;
+    transition: .5s ease;
 }
 .anim-show2{
     opacity: 1;
