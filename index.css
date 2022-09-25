@@ -68,7 +68,7 @@ nav{
 
 section{
     margin-top: 5rem;
-overflow:hidden;
+    overflow: hidden;
 }
 .window-scroll{
     box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.05);
@@ -345,7 +345,7 @@ section.head .container-head{
 .animu{
     opacity: 0;
     transform: translateY(-100%);
-    transition: .5s;
+    transition: 1s;
 }
 .anim-show1{
     opacity: 1;
@@ -492,7 +492,7 @@ section.benefit{
 .animl{
     opacity: 0;
     transform: translateX(-150%);
-    transition: .5s ease;
+    transition: 1.5s ease;
 }
 .animl.anim-show{
     opacity: 1;
@@ -542,7 +542,7 @@ section.works .work-img{
 .animr{
     opacity: 0;
     transform: translateX(200%);
-    transition: .5s ease;
+    transition: 1s ease;
 }
 .anim-show2{
     opacity: 1;
@@ -651,6 +651,7 @@ section.gaurantee{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 1rem;
     }
     .container-appoint{
         width: 35%;
