@@ -6,11 +6,11 @@
     <title>Document</title>
     <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
   />
-
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="index.css">
+    <script defer src="script.js"></script>
 
 </head>
 <body>
@@ -19,6 +19,9 @@
         <div class="container">
             <div class="nav-left">
                 <a href="#">bestsmile</a>
+                <div class="lan-btn mob-lann">
+                    <i class="mob-lan uil uil-globe"></i> <span class="mob-lan">English</span> 
+                </div>
             </div>
             <div class="nav-mid">
                 <ul>
@@ -26,89 +29,143 @@
                         <div class="li-t">
                             <span>Treatments</span> <i class="treat uil uil-angle-down"></i>
                         </div>
+                        <div class="drop">
+                            <div class="container-drop">
+                                <a class="dro" href="www.google.com">
+                                    <div class="drops">
+                                        <div class="img-box">
+                                            <img class="dr-1" src="Assests/aligner-front-still-mittlere.webp" alt="">
+                                        </div>
+                                        <div class="dr-txt">
+                                            <h1>Aligner</h1>
+                                            <p>Clear dental braces</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dro" href="#">
+                                    <div class="drops">
+                                        <div class="img-box">
+                                            <img class="dr-2" src="Assests/aligner-front-still-mittlere.webp" alt="">
+                                        </div>
+                                        <div class="dr-txt">
+                                            <h1>Night Aligner</h1>
+                                            <p>Night-time braces </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="dro" href="#">
+                                    <div class="drops">
+                                        <div class="img-box">
+                                            <img class="dr-3" src="Assests/veneers-transparent-front.webp" alt="">
+                                        </div>
+                                        <div class="dr-txt">
+                                            <h1>Veneers</h1>
+                                            <p>Thin ceramic dental shells</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </li>
                     <li>How it works</li>
                     <li>Experience</li>
                     <li>Pricing</li>
                     <li>Locations</li>
                 </ul>
+                <div class="nav-right nav-mid-right">
+                    <ul>
+                        <li class="more-d">
+                            <div class="li-tt">
+                                <span>More</span> <i class="more uil uil-angle-down"></i>
+                            </div>
+                            <div class="drop-more">
+                                <div class="more-container">
+                                    <ul class="drop-ul">
+                                        <li><a href="www.google.com">Results</a></li>
+                                        <li><a href="">About us</a></li>
+                                        <li><a href="">Guarantee</a></li>
+                                        <li><a href="">Topics</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                 <li>
+                    <div class="lan-btn">
+                            <i class="desk-lan uil uil-globe"></i> <span class="desk-lan">en</span> 
+                            </div>
+                            </li>
+                  <li><a href="" class="nav-btn">Free appointment</a></li>
+                    </ul>
+                </div>
+    
             </div>
-            <div class="nav-right">
+            <div class="nav-right nav-desk-right">
                 <ul>
-                    <li>
-                        <div class="li-tt">
-                            <span>More</span> <i class="more uil uil-angle-down"></i>
+                    <li class="more-d">
+                        <div class="li-tt li-more">
+                            <span>More</span> <i class="more more-i uil uil-angle-down"></i>
+                        </div>
+                        <div class="drop-more drop-more1">
+                            <div class="more-container">
+                                <ul class="drop-ul">
+                                    <li><a href="www.google.com">Results</a></li>
+                                    <li><a href="">About us</a></li>
+                                    <li><a href="">Guarantee</a></li>
+                                    <li><a href="">Topics</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="lan-btn">
-                            <i class="uil uil-globe"></i> <span>en</span> 
+             <li>
+                <div class="lan-btn">
+                        <i class="desk-lan uil uil-globe"></i> <span class="desk-lan">en</span> 
                         </div>
                         </li>
-                            <li><a href="" class="nav-btn">Free appointment</a></li>
+              <li><a href="" class="nav-btn">Free appointment</a></li>
                 </ul>
             </div>
         </div>
-        <div class="drop">
-            <div class="container-drop">
-
-                <div class="drops">
-                    <img class="dr-1" src="aligner-front-still-mittlere.webp" alt="">
-                    <div class="dr-txt">
-                        <h1>Aligner</h1>
-                        <p>Clear dental braces</p>
-                    </div>
-                </div>
-
-                <div class="drops">
-                    <img class="dr-2" src="/aligner-front-still-mittlere.webp" alt="">
-                    <div class="dr-txt">
-                        <h1>Night Aligner</h1>
-                        <p>Night-time braces </p>
-                    </div>
-                </div>
-
-                <div class="drops">
-                    <img class="dr-3" src="/veneers-transparent-front.webp" alt="">
-                    <div class="dr-txt">
-                        <h1>Veneers</h1>
-                        <p>Thin ceramic dental shells</p>
-                    </div>
-                </div>
-
-
-            </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
     <section class="head">
         <div class="container-head">
-            <div class="left-head">
+            <div class="left-head animl">
                 <h1>We Make <br> Switzerland smile</h1>
                 <p>Teeth straightening with clear braces and Veneers.</p>
                 <div class="rate">
-                    <img src="0ae02358b247638f19d5f17d1a95989f.svg" alt="">
+                    <img src="Assests/0ae02358b247638f19d5f17d1a95989f.svg" alt="">
                     <span>4.7</span>
                     <div class="stars">
-                        <img src="star.png" alt="">
-                        <img src="star.png" alt="">
-                        <img src="star.png" alt="">
-                        <img src="star.png" alt="">
-                        <img src="star.png" alt="">
+                        <img src="Assests/star.png" alt="">
+                        <img src="Assests/star.png" alt="">
+                        <img src="Assests/star.png" alt="">
+                        <img src="Assests/star.png" alt="">
+                        <img src="Assests/star.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="right-head">
-                <img src="laura-hero-home-1200.webp" alt="">
+            <div class="right-head animr">
+                <img src="Assests/laura-hero-home-1200.webp" alt="">
+             <a class="chf" href="">from<span>CHF 40</span>per month</a>
+                
             </div>
         </div>
-        <a class="chf" href="">from<span>CHF 40</span>per month</a>
         <h1 class="txt-swis">swiss made</h1>
     </section>
 
     <div class="support-btn">
         <a href=""><i class="uil uil-question-circle"></i> <span>Support</span> </a>
     </div>
+
+
+    <!-- // treatment  -->
 
     <section class="treatment">
         <div class="container-treat">
@@ -121,13 +178,13 @@
                     <h1>Aligner</h1>
                     <p>Teeth straightening with clear braces</p>
                     <h2>From CHF 40/month</h2>
-                    <img src="aligner-front-still-mittlere.webp" alt="">
+                    <img src="Assests/aligner-front-still-mittlere.webp" alt="">
                 </a>
                 <a href="#" class="card">
                     <h1>Veneers</h1>
                     <p>Dental Veneers - thin ceramic shells</p>
                     <h2>From CHF 80/month</h2>
-                    <img src="veneers-transparent-front.webp" alt="">
+                    <img src="Assests/veneers-transparent-front.webp" alt="">
                 </a>
             </div>
         </div>
@@ -162,118 +219,128 @@
         </div>
     </section>
     <section class="works benefit">
-        <img class="work-img" src="section.png" alt="">
+        <img class="work-img" src="Assests/section.png" alt="">
         <div class="container-work container-benefit">
             <h2>Process</h2>
             <h1>How it works</h1>
             <div class="work-contain reasons">
                 <div class="work">
-                    <img src="work1.webp" alt="">
-                    <h2>Book an appointment</h2>
-                    <p>Easy and flexible near ou. No waiting time.</p>
-                    <a href="">Free appointment</a>
+                    <img src="Assests/work1.webp" alt="">
+                    <div class="work-bd">
+                        <h2>Book an appointment</h2>
+                        <p>Easy and flexible near ou. No waiting time.</p>
+                        <a href="">Free appointment</a>
+                    </div>
                 </div>
                 <div class="work">
-                    <img src="work2.webp" alt="">
-                    <h2>Free 3D scan</h2>
-                    <p>Free 3D scan and consultation by our dental team.* <br> *One-off fee of CHF 100 for your treatment plan.</p>
+                    <img src="Assests/work2.webp" alt="">
+                    <div class="work-bd">
+                        <h2>Free 3D scan</h2>
+                        <p>Free 3D scan and consultation by our dental team.* <br> *One-off fee of CHF 100 for your treatment plan.</p>
+                    </div>
                 </div>
                 <div class="work">
-                    <img src="work3.webp" alt="">
-                    <h2>Treatment plan</h2>
-                    <p>Discuss your individual treatment plan with your bestsmile dentist.</p>
+                    <img src="Assests/work3.webp" alt="">
+                    <div class="work-bd">
+                        <h2>Treatment plan</h2>
+                        <p>Discuss your individual treatment plan with your bestsmile dentist.</p>
+                    </div>
                 </div>
                 <div class="work">
-                    <img src="work4.webp" alt="">
-                    <h2>Start</h2>
-                    <p>Our dentists accompany you throughout the entire treatment.</p>
+                    <img src="Assests/work4.webp" alt="">
+                    <div class="work-bd">
+                        <h2>Start</h2>
+                        <p>Our dentists accompany you throughout the entire treatment.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+<section class="testimonial__container mySwiper">
+    <h3>Customer experience with bestsmile</h3>
+    <h1>Change your life. <span>Secretly.</span> </h1>
+    <div class="swiper-wrapper animu">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="Assests/exp3.png">
+            </div>
+            <div class="testimonial__info">
+                <h5>Diana Ayi</h5>
+                <small>Veneers</small>
+            </div>
+            <div class="testimonial__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt, minus et quia officia error facere! Delectus eius optio, nostrum quibusdam, ab odit perferendis, sunt officia fugit ea quos autem.</p>
+            </div>
+        </article>
 
-    <section class="experience">
-        <div class="container-experience">
-            <h3>Customer experience with bestsmile</h3>
-            <h1>Change your life. <span>Secretly.</span> </h1>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="Assests/exp3.png">
+            </div>
+            <div class="testimonial__info">
+                <h5>Ernest Achiever</h5>
+                <small>Aligner</small>
+            </div>
+            <div class="testimonial__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt, minus et quia officia error facere! Delectus eius optio, nostrum quibusdam, ab odit perferendis, sunt officia fugit ea quos autem.</p>
+            </div>
+        </article>
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="Assests/exp3.png">
+            </div>
+            <div class="testimonial__info">
+                <h5>Eden Quist</h5>
+                <small>Veneers</small>
+            </div>
+            <div class="testimonial__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt, minus et quia officia error facere! Delectus eius optio, nostrum quibusdam, ab odit perferendis, sunt officia fugit ea quos autem.</p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="Assests/exp3.png">
+            </div>
+            <div class="testimonial__info">
+                <h5>Hajia Bintu</h5>
+                <small>Aligner</small>
+            </div>
+            <div class="testimonial__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt, minus et quia officia error facere! Delectus eius optio, nostrum quibusdam, ab odit perferendis, sunt officia fugit ea quos autem.</p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="Assests/exp3.png">
+            </div>
+            <div class="testimonial__info">
+                <h5>Jane Deo</h5>
+                <small>Veneers</small>
+            </div>
+            <div class="testimonial__body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt, minus et quia officia error facere! Delectus eius optio, nostrum quibusdam, ab odit perferendis, sunt officia fugit ea quos autem.</p>
+            </div>
+        </article>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
 
 
-                  <div class="swiper-slide">
-                    <img src="exp3.png" alt="">
-                    <div class="swiper-inf">
-                        <a href="">Veneers</a>
-                    </div>
-                    <div class="swiper-btn">
-                        <a href="">Aytuncs story</a>
-                    </div>
-                </div>
-                
-                  <div class="swiper-slide">
-                    <img src="exp3.png" alt="">
-                    <div class="swiper-inf">
-                        <a href="">Aligner</a>
-                    </div>
-                    <div class="swiper-btn">
-                        <a href="">Aytuncs story</a>
-                    </div>
-                </div>
-                  <div class="swiper-slide">
-                    <img src="exp3.png" alt="">
-                    <div class="swiper-inf">
-                        <a href="">Veneers</a>
-                    </div>
-                    <div class="swiper-btn">
-                        <a href="">Aytuncs story</a>
-                    </div>
-                </div>
-                
-                  <div class="swiper-slide">
-                    <img src="exp3.png" alt="">
-                    <div class="swiper-inf">
-                        <a href="">Aligner</a>
-                    </div>
-                    <div class="swiper-btn">
-                        <a href="">Aytuncs story</a>
-                    </div>
-                </div>
-                  <div class="swiper-slide">
-                    <img src="exp3.png" alt="">
-                    <div class="swiper-inf">
-                        <a href="">Aligner</a>
-                    </div>
-                    <div class="swiper-btn">
-                        <a href="">Aytuncs story</a>
-                    </div>
-                </div>
-                  <div class="swiper-slide">
-                    <img src="exp3.png" alt="">
-                    <div class="swiper-inf">
-                        <a href="">Aligner</a>
-                    </div>
-                    <div class="swiper-btn">
-                        <a href="">Aytuncs story</a>
-                    </div>
-                </div>
-                  
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-              </div>
-        </div>
-        <a class="gaur-btn" href="">bestsmile testimonials</a>
-    </section>
+
+
+
 
 
     <section class="gaurantee">
         <div class="container-gaur">
             <div class="gaur">
-                <img src="sec2.png" alt="">
+                <img src="Assests/sec2.png" alt="">
                 <div class="img-cl">
                     <a href="">
-                        <img src="gaur.png" alt="">
+                        <img src="Assests/gaur.png" alt="">
                     </a>
                 </div>
             </div>
@@ -286,7 +353,7 @@
     </section>
 
     <section class="appoint">
-        <div class="container-appoint">
+        <div class="container-appoint animu">
             <h1>When will you get your new smile?</h1>
             <p>Book your free 3D scan and consultation appointment now</p>
             <a class="app-btn nav-btn" href="">Free appointments</a>
@@ -494,10 +561,7 @@
     </div>
 </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 </body>
 </html>
